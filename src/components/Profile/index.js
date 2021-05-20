@@ -1,54 +1,55 @@
 import React from 'react';
 import { StyleSheet, Text, View,Dimensions } from 'react-native';
+import { WARNA_UTAMA } from '../utils/constant';
 import  ButtonIcon  from "../ButtonIcon/index";
 import Gap from '../Gap';
 
-const Saldo = () => {
+const Profile = () => {
 	return (
 		<View style={styles.container}>
 				<View style={styles.buttonAksi}>
-					<ButtonIcon title="Gopay" />	
+					<ButtonIcon title="Roger" />	
 					<Gap width ={10}/>			
 				</View>		
 			<View style={styles.informasiSaldo}>
 				<View style={styles.text}>
 					{/* <Text style={styles.labelSaldo}>Saldo :</Text> */}
-					<Text style={styles.valueSaldo}>RP. 200,000</Text>
+					<Text style={styles.valueSaldo}>Gold D.Roger</Text>
 				</View>
 				<View style={styles.text}>
-					<Text style={styles.labelGopay}>Saldo Gopay </Text>
+					<Text style={styles.labelGopay}>Raja Bajak Laut </Text>
 					{/* <Text style={styles.valueGopay}>RP. 100,000</Text> */}
 				</View>
 			</View>
-			<View style={styles.buttonArrow}>
+			{/* <View style={styles.buttonArrow}>
 					<ButtonIcon title= "Arrow"/>				
-				</View>	
+				</View>	 */}
 	
 		</View>
 	);
 };
 
-export default Saldo;
+export default Profile;
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
 	container: {
-		backgroundColor: 'white',
+		// backgroundColor: 'white',
 		padding: 17,
-		marginHorizontal: 30,
-		borderRadius: 10,
-		shadowColor: "#000",
-		shadowOffset: {
-			width: 0,
-			height: 3,
-		},
-		shadowOpacity: 0.29,
-		shadowRadius: 4.65,
+		marginHorizontal: -10,
+		borderRadius: 15,
+		// shadowColor: "#000",
+		// shadowOffset: {
+		// 	width: 0,
+		// 	height: 3,
+		// },
+		// shadowOpacity: 0.29,
+		// shadowRadius: 4.65,
 
-		elevation: 7,
-		marginTop: windowHeight*0.001,
+		// elevation: 7,
+		marginTop: -300,
 		flexDirection:'row'
 	},
 	text: {
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
 	},
 	informasiSaldo: {
 		width: '60%',
-		backgroundColor: 'white'
+		// backgroundColor: 'white'
 	},
 	labelSaldo: {
 		fontSize: 20,

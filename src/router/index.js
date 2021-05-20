@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 
 const MainApp =() => {
 	return (
-		<Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
+		<Tab.Navigator  tabBar={props => <BottomNavigator {...props} />}>
 			<Tab.Screen name="Home" component={Home} />
 			<Tab.Screen name="Pesanan" component={Pesanan} />
 			<Tab.Screen name="Akun" component={Akun} />
@@ -30,4 +30,9 @@ const Router = () => {
 
 export default Router;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+	bar:{
+		backgroundColor:'#BBEDE9',
+	},
+
+})

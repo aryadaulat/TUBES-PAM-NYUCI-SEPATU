@@ -50,5 +50,10 @@ const styles = StyleSheet.create({
 		fontSize:14,
 		fontFamily: 'TitilliumWeb-Light',
 		color: status  === 'Sudah Selesai' ? WARNA_UTAMA : status === 'Dalam Proses Pengerjaan' ? WARNA_WARNING : WARNA_ABU,
-		})
+		}),
+		touch:{
+		backgroundColor: 'orange',
+		alignSelf: 'stretch',
+		paddingHorizontal: 20
+	}
 });

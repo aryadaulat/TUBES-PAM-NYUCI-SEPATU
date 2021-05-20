@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity,Image } from 'react-native'
-import {IconGopay,IconArrow,IconHigh,IconHiking,IconSneakers,IconLoafers,IconHeels,IconFlat} from "../../assets"
+import {IconGopay,IconArrow,IconHigh,IconHiking,IconSneakers,IconLoafers,IconHeels,IconFlat,IconRoger, IconAkun} from "../../assets"
 
 
 const ButtonIcon = ({title , type}) => {
@@ -20,6 +20,11 @@ const ButtonIcon = ({title , type}) => {
 				if(title == "Heels") return <IconHeels />
 
 				if(title == "Flat") return <IconFlat />
+
+				if(title == "Roger") return <IconRoger />
+
+				if(title == "Akun") return <IconAkun />
+
 
 				return <IconGopay />
 				

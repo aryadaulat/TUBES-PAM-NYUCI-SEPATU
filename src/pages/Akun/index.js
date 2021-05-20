@@ -1,15 +1,22 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground } from 'react-native'
-import {Shizuka } from '../../assets'
+import { StyleSheet, Text, View, ImageBackground,ScrollView } from 'react-native'
+import {Loading} from '../../assets'
+import {Profile, Saldo , Data} from '../../components'
 
 const Akun = () => {
 	return (
-		// <View>
-		// 	<Text></Text>
-		// </View>
-		<ImageBackground source=	{Shizuka} style={styles.background}>
-				
-		</ImageBackground>
+
+					<View style={styles.page}>
+						<ImageBackground source={Loading} style={styles.background}>
+						<Profile />
+						<Saldo />
+						<Data />
+					</ImageBackground>
+
+
+		</View>
+
+
 
 	)
 }
@@ -21,5 +28,8 @@ const styles = StyleSheet.create({
 		flex: 1,
 		alignItems: 'center',
 		justifyContent: 'center'
+	},
+	page: {
+	flex: 1,
 	}
 })

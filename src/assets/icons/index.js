@@ -12,6 +12,6 @@ import IconSneakers from './Sneakers.svg'
 import IconLoafers from './Loafers.svg'
 import IconHeels from './Heels.svg'
 import IconFlat from './Flat.svg'
+import IconRoger from './IconRoger.svg'
 
-
-export {IconAkun,IconAkunAktif,IconHome,IconHomeAktif,IconPesanan,IconPesananAktif,IconGopay,IconArrow,IconHigh,IconHiking,IconSneakers,IconLoafers,IconHeels,IconFlat}
+export {IconAkun,IconAkunAktif,IconHome,IconHomeAktif,IconPesanan,IconPesananAktif,IconGopay,IconArrow,IconHigh,IconHiking,IconSneakers,IconLoafers,IconHeels,IconFlat,IconRoger}
