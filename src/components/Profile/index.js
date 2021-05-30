@@ -1,16 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View,Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import { WARNA_UTAMA } from '../utils/constant';
-import  ButtonIcon  from "../ButtonIcon/index";
+import ButtonIcon from "../ButtonIcon/index";
 import Gap from '../Gap';
 
 const Profile = () => {
+	0
 	return (
 		<View style={styles.container}>
-				<View style={styles.buttonAksi}>
-					<ButtonIcon title="Roger" />	
-					<Gap width ={10}/>			
-				</View>		
+			<View style={styles.buttonAksi}>
+				<ButtonIcon title="Roger" />
+				<Gap width={10} />
+			</View>
 			<View style={styles.informasiSaldo}>
 				<View style={styles.text}>
 					{/* <Text style={styles.labelSaldo}>Saldo :</Text> */}
@@ -24,7 +25,7 @@ const Profile = () => {
 			{/* <View style={styles.buttonArrow}>
 					<ButtonIcon title= "Arrow"/>				
 				</View>	 */}
-	
+
 		</View>
 	);
 };
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
 
 		// elevation: 7,
 		marginTop: -300,
-		flexDirection:'row'
+		flexDirection: 'row'
 	},
 	text: {
 		flexDirection: 'row',

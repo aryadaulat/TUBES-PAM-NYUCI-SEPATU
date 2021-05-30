@@ -4,9 +4,9 @@ import { IconPesanan } from "../../assets"
 import { WARNA_ABU, WARNA_WARNING } from '../../utils/constant';
 import { WARNA_UTAMA } from '../utils/constant';
 
-const PesananAktif  = ({title,status}) => {
+const PesananAktif  = ({title,status,onPress}) => {
 	return (
-		<TouchableOpacity style={styles.container}>
+		<TouchableOpacity style={styles.container} onPress={onPress}>
 			<IconPesanan/>
 			<View style={styles.text}>
 			<Text style={styles.title}>   {title}</Text>

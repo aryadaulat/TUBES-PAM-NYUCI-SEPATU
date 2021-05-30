@@ -5,8 +5,14 @@ import { BackgroundSatu, Logo } from '../../assets';
 import {Pick} from '../../components/Pick'
 import { Pick2 } from '../../components/Pick2';
 import { Pick3 } from '../../components/Pick3';
+import ButtonIcon from '../../components/ButtonIcon';
 
-const Pesanan = (onPress,onLongPress) => {
+
+const Pesanan = ({navigation, onPress,onLongPress }) => {
+	const handleGoTo=screen=>{
+		navigation.navigate(screen);
+	};
+	
 	const Pilih = ()=>{
 	const [chooseData, setchooseData] = useState('Pilih Jenis Sepatu');
 
@@ -139,12 +145,10 @@ const Pesanan = (onPress,onLongPress) => {
             onLongPress={onLongPress}  style={styles.pilih}>
 					<Pilih3 />
 				</TouchableOpacity>
-
-					<TouchableOpacity>
 					<View style={styles.buatpesanan}>
-					<Text style={styles.textpesanan}>Buat Pesanan</Text>
-				</View>
-					</TouchableOpacity>
+					<ButtonIcon title="BuatPesanan" type="layanan" onPress={()=> handleGoTo('AkhirForm')}/>
+
+					</View>
 
 			</ScrollView>
 		</View>
@@ -190,7 +194,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center'
 	},
 	input: {
-
+		
 	},
 	nama: {
 		fontSize:18,
@@ -271,5 +275,11 @@ const styles = StyleSheet.create({
 	textpesanan:{
 		flexDirection: 'row',
 		justifyContent: 'space-between'
+	},
+	buatpesanan:{
+		marginLeft:25,
+		padding: 15,
+		alignItems: 'center',
+		// justifyContent: 'center',
 	}
 })

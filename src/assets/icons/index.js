@@ -13,5 +13,13 @@ import IconLoafers from './Loafers.svg'
 import IconHeels from './Heels.svg'
 import IconFlat from './Flat.svg'
 import IconRoger from './IconRoger.svg'
+import BuatPesanan from './BuatPesanan.svg'
+import Settings from './Settings.svg'
+import Logout from './Logout.svg'
+import Order from './Order.svg'
+import History from './History.svg'
 
-export {IconAkun,IconAkunAktif,IconHome,IconHomeAktif,IconPesanan,IconPesananAktif,IconGopay,IconArrow,IconHigh,IconHiking,IconSneakers,IconLoafers,IconHeels,IconFlat,IconRoger}
+export {IconAkun,IconAkunAktif,IconHome,IconHomeAktif,IconPesanan,
+	IconPesananAktif,IconGopay,IconArrow,IconHigh,IconHiking,
+	IconSneakers,IconLoafers,IconHeels,IconFlat,IconRoger,
+	BuatPesanan,Settings,Logout,Order,History}

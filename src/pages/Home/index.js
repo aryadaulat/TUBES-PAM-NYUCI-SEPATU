@@ -5,7 +5,10 @@ import {PesananAktif, Saldo} from "../../components/";
 import ButtonIcon from '../../components/ButtonIcon';
 
 
-const Home = () => {
+const Home = ({navigation}) => {
+	const handleGoTo=screen=>{
+		navigation.navigate(screen);
+	};
 	return (
 		<View style={styles.page}>
 			<ScrollView showsVerticalScrollIndicator={false}>
@@ -20,21 +23,21 @@ const Home = () => {
 			<View style={styles.layanan}>
 				<Text style={styles.label}>Layanan Kami</Text>
 				<View style={styles.iconLayanan}>
-				<ButtonIcon title="High" type="layanan"/>
-				<ButtonIcon title="Hiking" type="layanan"/>
-				<ButtonIcon title="Sneakers" type="layanan"/>
-				<ButtonIcon title="Loafers" type="layanan"/>
-				<ButtonIcon title="Heels" type="layanan"/>				
-				<ButtonIcon title="Flat" type="layanan"/>
+				<ButtonIcon title="High" type="layanan" onPress={()=> handleGoTo('Pesanan')}/>
+				<ButtonIcon title="Hiking" type="layanan" onPress={()=> handleGoTo('Pesanan')}/>
+				<ButtonIcon title="Sneakers" type="layanan" onPress={()=> handleGoTo('Pesanan')}/>
+				<ButtonIcon title="Loafers" type="layanan" onPress={()=> handleGoTo('Pesanan')}/>
+				<ButtonIcon title="Heels" type="layanan" onPress={()=> handleGoTo('Pesanan')}/>				
+				<ButtonIcon title="Flat" type="layanan" onPress={()=> handleGoTo('Pesanan')}/>
 
 				</View>
 			</View>
 				<View style={styles.pesananAktif}>
 				<Text style={styles.label}>Riwayat Pesanan</Text>
-				<PesananAktif title="Pesanan No. 0002142" status ="Sudah Selesai"/>
-				<PesananAktif title="Pesanan No. 0002142" status ="Dalam Proses Pengerjaan"/>
-				<PesananAktif title="Pesanan No. 0002142" status ="Sudah Selesai"/>
-				<PesananAktif title="Pesanan No. 0002142" status ="Sudah Selesai"/>
+				<PesananAktif title="Pesanan No. 0002142" status ="Sudah Selesai" onPress={()=> handleGoTo('History')}/>
+				<PesananAktif title="Pesanan No. 0002143" status ="Dalam Proses Pengerjaan" onPress={()=> handleGoTo('Order')}/>
+				<PesananAktif title="Pesanan No. 0002144" status ="Sudah Selesai" onPress={()=> handleGoTo('History')}/>
+				<PesananAktif title="Pesanan No. 0002145" status ="Sudah Selesai" onPress={()=> handleGoTo('History')}/>
 			</View>
 			</ScrollView>
 

@@ -1,32 +1,36 @@
 import React from 'react';
-import { StyleSheet, Text, View,Dimensions } from 'react-native';
+import { StyleSheet, Text, View,Dimensions,Image } from 'react-native';
 import  ButtonIcon  from "../ButtonIcon/index";
 import Gap from '../Gap';
 
 const Data = () => {
 	return (
 		<View style={styles.container}>
-			<View style={styles.buttonAksi}>
+			{/* <View style={styles.buttonAksi}>
 				<View>
 				{/* <ButtonIcon title="Akun"></ButtonIcon>	
 				<ButtonIcon title="Akun"></ButtonIcon>
 				<ButtonIcon title="Akun"></ButtonIcon> */}
-				</View>
+				{/* </View>
 				
 				<Gap width ={10}/>
-				</View>	
-					
+				</View>	 */}
+					 
 			<View style={styles.informasiSaldo}>
 				
+				
 				<View style={styles.text}>
+				<ButtonIcon title="Akun"/>
 					{/* <Text style={styles.labelSaldo}>Saldo :</Text> */}
 					<Text style={styles.valueSaldo}>Data Pribadi</Text>
 				</View>
 				<View style={styles.text}>
+				<ButtonIcon title="Settings"/>
 					<Text style={styles.valueSaldo}>Settings  </Text>
 					{/* <Text style={styles.valueGopay}>RP. 100,000</Text> */}
 				</View>
 				<View style={styles.text}>
+				<ButtonIcon title="Logout"/>
 					<Text style={styles.valueSaldo}>Logout  </Text>
 					{/* <Text style={styles.valueGopay}>RP. 100,000</Text> */}
 				</View>
@@ -65,8 +69,8 @@ const styles = StyleSheet.create({
 	},
 	text: {
 		flexDirection: 'row',
-		justifyContent: 'space-between',
-		marginBottom: 1
+		// justifyContent: 'space-between',
+		// marginBottom: 1
 		
 	},
 	informasiSaldo: {
@@ -76,13 +80,15 @@ const styles = StyleSheet.create({
 		marginBottom: -160,
 		// alignItems:'center',
 	
-		backgroundColor: 'white'
+		// backgroundColor: 'white'
 	},
 	labelSaldo: {
 		fontSize: 20,
 		fontFamily: 'TitilliumWeb-Reguler'
 	},
 	valueSaldo: {
+		marginLeft: 15,
+		marginTop: 10,
 		fontSize: 20,
 		fontFamily: 'TitilliumWeb-Bold'
 	},
@@ -106,6 +112,6 @@ const styles = StyleSheet.create({
 	buttonArrow: {
 		flexDirection: 'row',
 		marginLeft: 40
-	}
+	},
 
 })

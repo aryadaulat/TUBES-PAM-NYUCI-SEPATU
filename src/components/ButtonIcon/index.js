@@ -1,9 +1,11 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity,Image } from 'react-native'
-import {IconGopay,IconArrow,IconHigh,IconHiking,IconSneakers,IconLoafers,IconHeels,IconFlat,IconRoger, IconAkun} from "../../assets"
+import { StyleSheet, Text, View ,Image } from 'react-native'
+import {IconGopay,IconArrow,IconHigh,IconHiking,IconSneakers,IconLoafers
+	,IconHeels,IconFlat,IconRoger, IconAkun,BuatPesanan,Settings,
+	Logout,Order,History} from "../../assets"
+import {TouchableOpacity } from 'react-native-gesture-handler';
 
-
-const ButtonIcon = ({title , type}) => {
+const ButtonIcon = ({title , type,onPress}) => {
 			const Icon = () => {
 				if(title =="Gopay") return <IconGopay />
 
@@ -25,13 +27,22 @@ const ButtonIcon = ({title , type}) => {
 
 				if(title == "Akun") return <IconAkun />
 
+				if(title == "BuatPesanan") return <BuatPesanan />
+
+				if(title == "Settings") return <Settings />
+
+				if(title == "Logout") return <Logout />
+
+				if(title == "Order") return <Order />
+
+				if(title == "History") return <History />
 
 				return <IconGopay />
 				
 			}
 
 	return (
-		<TouchableOpacity style={styles.container(type)} >
+		<TouchableOpacity style={styles.container(type)} onPress={onPress} >
 			<View style={styles.icon(type)}>
 				<Icon/>
 			</View>
@@ -48,7 +59,7 @@ const styles = StyleSheet.create({
 		marginRight	:type === "layanan" ? 30 : 0	
 	}),
 	icon: (type) => ({
-		backgroundColor: 'white',
+		// backgroundColor: 'white',
 		padding: type === "layanan" ? 3 : 7,
 		borderRadius: 10,
 	}),
